@@ -1,0 +1,18 @@
+
+<%= @errors %>
+
+<fieldset>
+  <legend>Meetup</legend>
+  <form method="post" action="/meetups">
+    <label for="name">Name</label>
+    <input type="text" name="name" id="name" style="background-color: black" value= <%= @name %> >
+
+    <label for="description">Description</label>
+    <input type="text" name="description" id="description" style="background-color: black" value= <%= @description %>>
+
+    <label for="location">Location</label>
+    <input type="text" name="location" id="location" style="background-color: black" value=<%= @location %> >
+
+    <input type="submit" value="Create" style="background-color: black"  />
+  </form>
+</fieldset>
